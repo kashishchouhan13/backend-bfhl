@@ -66,6 +66,10 @@ app.post("/bfhl", (req, res) => {
 app.get("/bfhl", (req, res) => {
   res.status(200).json({ operation_code: 1 });
 });
+app.get("/", (req, res) => {
+  res.send("Welcome to the Backend API");
+});
+
 
 // Prime number checker
 function isPrime(num) {
